@@ -16,10 +16,10 @@ func main() {
 
 	for i := range lines {
 		if strings.HasPrefix(lines[i], "PRETTY") {
-			color.Blue("\n  You are in fucking " + lines[i][13:len(lines[i]) - 1])
-			color.Green("  On a piece of shit named " + string(productName))
-			color.Yellow("  Your wretched hostname is " + string(hostName)[:len(string(hostName)) - 1])
-			color.Red("  Your stupid username is " + username)
+			color.Blue("\n  You are in " + lines[i][13:len(lines[i]) - 1])
+			color.Green("  On a " + string(productName))
+			color.Yellow("  Your hostname is " + string(hostName)[:len(string(hostName)) - 1])
+			color.Red("  Your username is " + username)
 		}
 	}
 }
